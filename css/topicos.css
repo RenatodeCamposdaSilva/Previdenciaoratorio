@@ -1,0 +1,125 @@
+.objetivo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.objetivo__imagem {
+    width: 40%;
+    border-radius: 48px;
+    margin-right: 48px;
+}
+
+.objetivo__texto {
+    font-family: var(--fonte-texto);
+    color: white;
+    font-size: 64px;
+    margin: 0 48px;
+    text-align: center;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    color: var(--azul-principal);
+    margin: 96px 0 32px 0;
+}
+
+.conteiner__texto {
+    font-size: 32px;
+    font-family: var(--fonte-texto);
+}
+
+.servicos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/imagens/fundologo.png');
+}
+
+.servicos__titulo {
+    font-family: var(--fonte-titulo);
+    color: #B79969;
+    font-size: 64px;
+}
+
+.servicos__conteudo {
+    display: flex;
+    align-items: center;
+    margin: 96px;
+    justify-content: space-around;
+}
+
+.servicos__imagem {
+    width: 50%;
+    border-radius: 100%;
+
+}
+
+.lista__itens {
+    font-family: var(--fonte-texto);
+    font-size: 40px;
+    margin: 32px 0 0 48px;
+    color: var(--azul-principal);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 490px) {
+
+
+    .objetivo{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 64px;
+    }
+
+    .objetivo__texto{
+        font-size: 32px;
+    }
+
+    .objetivo__imagem{
+        width: 90%;
+        margin: 16px 0 0 0 ;
+    }
+
+    .conteiner__texto{
+        font-size: 16px;
+        margin-left: 16px;
+
+    }
+
+    .servicos{
+        background-image: linear-gradient(315deg, gray, white);
+        background-size: cover;
+        padding: 0 12.5rem;
+
+    }
+
+    .servicos__conteudo{
+        margin-top: 16px;
+        margin-left: 16px;
+
+    }
+
+    .lista{
+        margin: 0 6rem 0 3rem ;
+    }
+
+    .servicos__titulo{
+        font-size: 32px;
+        margin: 0 20rem ;
+    }
+
+    .lista__itens{
+        font-size: 22px;
+        margin: 16px 0;
+    }
+
+}

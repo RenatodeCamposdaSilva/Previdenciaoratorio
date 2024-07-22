@@ -1,0 +1,110 @@
+.corpo {
+    background-image: url("/imagens/FundoDegrade.png.jpg");
+    background-size: cover;
+}
+
+
+.barrahome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    margin: 16px 16px 48px 16px;
+}
+
+.barrahome__imagem {
+    margin: 16px 0;
+    max-width: 15%;
+    width: auto;
+}
+
+.barrahome__texto {
+    font-family: var(--fonte-titulo);
+    font-size: 72px;
+    color: var(--azul-principal);
+    margin-right: 30%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.navegacao__imagem {
+    border-radius: 80px;
+    margin-left: 48px;
+}
+
+.navegacao__texto {
+    font-family: var(--fonte-texto);
+    color: white;
+    margin-top: 16px;
+    margin-right: 45%;
+    font-size: 48px;
+    text-align: center;
+}
+
+.navegacao__lista {
+    flex-direction: column;
+    display: flex;
+}
+
+.navegacao__itens {
+    border-top: 1px solid white;
+    padding: 32px 128px 32px 0;
+    margin-right: 64px;
+
+}
+
+.navegacao__itens__texto {
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    color: white;
+    font-size: 24px;
+}
+
+.navegacao__itens__texto:hover {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 490px) {
+
+    .barrahome__texto {
+        font-size: 32px;
+    }
+
+    .navegacao {
+        margin-top: 32px;
+    }
+
+    .navegacao__imagem {
+        width: 70%;
+        margin: 0;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        width: 50%;
+    }
+
+    .navegacao__itens__texto{
+        font-size: 16px;
+    }
+
+    .navegacao__itens{
+        padding: 1rem 1.5rem 1rem 0rem;
+        margin: 0;
+    }
+
+    .navegacao__texto{
+        font-size: 32px;
+        margin-left: 20%;
+    }
+
+}

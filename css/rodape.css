@@ -1,0 +1,104 @@
+.rodape {
+    background-image: url('//imagens/Cartão\ Oratório\ \(1\).png');
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__titulo {
+    font-family: var(--fonte-titulo);
+    color: var(--azul-principal);
+    font-size: 48px;
+    margin-top: 32px;
+}
+
+.horario__imagem {
+    margin-left: 32px;
+}
+
+.rodape__contatos {
+    margin-top: 64px;
+    display: flex;
+
+}
+
+.horario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.horario__texto {
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    color: white;
+    font-weight: 500;
+    background-image: url('/imagens/09d09cf29f78445c24e76ae54b821b78.png');
+    background-size: cover;
+    font-size: 32px;
+    padding: 32px 16px 72px;
+    margin: 32px 0;
+}
+
+.lista__contatos {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.lista__imagens {
+    width: 15%;
+    margin-right: 48px;
+}
+
+.lista-contatos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lista__texto {
+    color: var(--azul-principal);
+    font-family: var(--fonte-texto);
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lista__texto:hover {
+    font-size: 32px;
+}
+
+.email:hover {
+    font-size: 27px;
+}
+
+
+@media screen and (max-width: 490px) {
+    .rodape__titulo {
+        font-size: 32px;
+    }
+
+    .rodape__contatos{
+        flex-direction: column;
+    }
+
+    .horario__imagem{
+        width: 70%;
+    }
+
+    .lista__texto{
+        font-size: 16px;
+    }
+
+    .lista-contatos{
+        margin-left: 2rem;
+        margin-bottom: 2rem;        
+    }
+
+    .lista__imagens{
+        margin: 0;  
+    }
+}
